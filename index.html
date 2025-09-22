@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./index.js"></script>
     <title>Rendezvous</title>
 </head>
 
@@ -28,21 +29,149 @@
         </header>
         <div class="flex justify-center space-x-30 [1300px] mt-70 rounded-b-lg relative z-10">
             <div class="text-white font-bold text-[32px]">Ready to Rock? Discover the <br> Hottest Events Here - Your
-                <br> Calendar's New Best Friend!</div>
-            <div class="flex items-center justify-center space-x-10 bg-white rounded-[20px] p-3 mt-10 w-[660px] h-[100px]">
+                <br> Calendar's New Best Friend!
+            </div>
+            <div
+                class="flex items-center justify-center space-x-10 bg-white rounded-[20px] p-3 mt-10 w-[660px] h-[100px]">
                 <img src="./assets/images/Search.png" alt="Search Icon" class="size-[16px]">
                 <span class="text-[#4F4F4F]">Search for an event</span>
-                <div class="w-[2px] h-10 bg-[#E0E0E0]"></div>
+                <div class="w-[2px] h-15 bg-[#E0E0E0]"></div>
                 <div class="text-[#4F4F4F]">Categories</div>
-                <img src="./assets/images/Chevron--down.png" alt="Dropdown Icon" class="size-[16px]">
-                <button
-                    class="bg-[#783EAD] p-2 rounded-lg w-[120px] h-[44px] text-white items-center justfiy-center">Search</button>
+                 <!-- Image button -->
+                <div class="relative inline-block text-left">
+                <button id="dropdownButton" class="focus:outline-none">
+                <img src="./assets/images/Chevron--down.png" alt="Dropdown Icon" class="size-[16px] cursor-pointer">
+                </button>
+                 <!-- Dropdown Menu -->
+                <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">All</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Comedy</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Religious</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tech</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Health</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Fitness</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sport</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Education</a>
+                </div>
+                </div>
+                <button class="bg-[#783EAD] p-2 rounded-lg w-[120px] h-[44px] text-white items-center justfiy-center">Search</button>
             </div>
         </div>
     </main>
     <!-- Trending Events Section -->
-    <Section class="h-[738px] mx-auto mt-10 bg-white p-6 rounded-lg">
-        <div class="text-bold text-[#4F4F4F]">Trending Events</div>
+    <Section class="h-[738px] mx-auto mt-10 bg-white p-6">
+        <div class="flex justfiy-between px-8 w-full items-center space-x-200">
+            <div class="text-bold text-[#000000] text-[32px] mb-5">Trending Events</div>
+            <div class="flex space-x-2">
+                <div class="text-bold text-[#432361] text-[16px]">View all trending events</div>
+                <img src="./assets/images/Arrow--up-right.png" alt="Arrow Up" class="size-[16px]">
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+            <!-- First card -->
+            <div class="bg-white border border-gray-200 rounded-lg w-[421px] h-[488px]">
+                <img src="./assets//images/Rectangle 3.png" alt="First image card"
+                    class="w-[421px] h-[240px] bg-white rounded-t-lg">
+                <p class="font-bold text-black text-[16px] px-7 pt-5">ISWIS Live show</p>
+                <p class="text-[14px] px-7 font-bold">Sun, Oct 3rd . 6:00 PM</p>
+                <p class="text-[14px] mb-10 px-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>consequat.</p>
+                <div class="flex justfiy-center items-center">
+                    <a href="#" class="text-[14px] text-[#432361] font-bold px-7">View Details</a>
+                    <img src="./assets/images/Arrow--up-right.png" alt="Arrow Up" class="size-[16px]">
+                </div>
+            </div>
+            <!-- Second card -->
+            <div class="bg-white border border-gray-200 rounded-lg w-[421px] h-[488px]">
+                <img src="./assets/images/Rectangle 3 (1).png" alt="Second image card"
+                    class="w[421px] h-[240px] bg-white rounded-t-lg">
+                <p class="font-bold text-black text-[16px] px-7 pt-5">ISWIS Live show</p>
+                <p class="text-[14px] px-7 font-bold">Sun, Oct 3rd . 6:00 PM</p>
+                <p class="text-[14px] mb-10 px-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>consequat.</p>
+                <div class="flex justfiy-center items-center">
+                    <a href="#" class="text-[14px] text-[#432361] font-bold px-7">View Details</a>
+                    <img src="./assets/images/Arrow--up-right.png" alt="Arrow Up" class="size-[16px]">
+                </div>
+            </div>
+            <!-- Third card -->
+            <div class="bg-white border border-gray-200 rounded-lg w-[421px] h-[488px]">
+                <img src="./assets/images/Rectangle 3 (2).png" alt="Second image card"
+                    class="w[421px] h-[240px] bg-white rounded-t-lg">
+                <p class="font-bold text-black text-[16px] px-7 pt-5">ISWIS Live show</p>
+                <p class="text-[14px] px-7 font-bold">Sun, Oct 3rd . 6:00 PM</p>
+                <p class="text-[14px] mb-10 px-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
+                    eiusmod tempor
+                    incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>consequat.</p>
+                <div class="flex justfiy-center items-center">
+                    <a href="#" class="text-[14px] text-[#432361] font-bold px-7">View Details</a>
+                    <img src="./assets/images/Arrow--up-right.png" alt="Arrow Up" class="size-[16px]">
+                </div>
+            </div>
+        </div>
+        <!-- Events Section -->
+        <div class="grid grid-cols-3 pt-20 gap-7">
+            <div class="flex flex-col space-y-6">
+                <p class="text-bold text-[32px]">Discover a World of Events <br>Tailored Just for You.</p>
+                <button class="bg-[#783EAD] text-white p-2 rounded-lg h-[44px] w-[154px]">View all events</button>
+            </div>
+            <!-- First card -->
+            <div class="flex flex-col space-y-6">
+                <div class="relative">
+                    <img src="./assets/images/Card1.png" alt="First card" class="h-[240px] w-[421px]">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 rounded-2xl">
+                        <p class="text-white text-2xl font-normal">Online Events</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="./assets/images/Card2.png" alt="First card" class="h-[240px] w-[421px]">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 rounded-2xl">
+                        <p class="text-white text-2xl font-normal">Hybrid Events</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second card -->
+            <div>
+                <div class="relative">
+                    <img src="./assets/images/Card3.png" alt="First card" class="h-[240px] w-[421px]">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 rounded-2xl">
+                        <p class="text-white text-2xl font-normal">Physical Events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="mt-30 h-[343px] w-full bg-[#432361]">
+            <div class="flex grid-cols-4 pt-20 space-x-30 pl-20">
+            <div class="">
+                <p class="text-[32px] text-white font-bold">rendezvous</p>
+                <p class="text-[16px] text-white font-normal">Your Personal Event Sherpa: Curating <br>Awesome, One Click at
+                    a Time.</p>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <p class="text-[20px] text-white font-bold">Feature</p>
+                <a href="#" class="text-[16px] text-white">Events discovery</a>
+                <a href="#" class="text-[16px] text-white">Ticketing</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <p class="text-[20px] text-white font-bold">Company</p>
+                <a href="#" class="text-[16px] text-white">About Us</a>
+                <a href="#" class="text-[16px] text-white">FAQs</a>
+                <a href="#" class="text-[16px] text-white">Careers</a>
+                <a href="#" class="text-[16px] text-white">Support</a>
+            </div>
+            <div class="flex-col space-y-4">
+                <p class="text-[20px] text-white font-bold">Contact Us</p>
+                <p class="text-[16px] text-white">info@events.com</p>
+                <p class="text-[16px] text-white">Race Course, 8/9 Marina, <br>Onikan, Lagos Lagos, 4aa Force Rd, <br>Lagos Island 102273, Lagos</p>
+            </div>
+        </div>
+        </div>
     </Section>
 </body>
 
