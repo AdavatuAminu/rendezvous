@@ -1,4 +1,3 @@
-// index.js
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("dropdownButton");
     const menu = document.getElementById("dropdownMenu");
@@ -24,7 +23,7 @@ const createCard = (data) => {
 
     // make the image clickable
     const imgLink = document.createElement('a');
-    imgLink.href = `eventDetail.html?productId=${data.id}`;
+    imgLink.href = `2index.html?productId=${data.id}`;
 
     const img = document.createElement('img');
     img.src = data.imgSrc;
@@ -53,7 +52,7 @@ const createCard = (data) => {
     footer.className = 'flex justify-start items-center px-6 pb-4';
 
     const link = document.createElement('a');
-    link.href = `eventDetail.html?productId=${data.id}`;
+    link.href = `2index.html?productId=${data.id}`;
     link.className = 'text-sm sm:text-base text-[#432361] font-bold';
     link.textContent = data.linkText;
 

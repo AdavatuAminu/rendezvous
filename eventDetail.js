@@ -16,20 +16,48 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (product) {
         const info = product.getProductInfo();
-        const container = document.getElementById("eventDetail");
 
-        container.innerHTML = `
-            <img src="${info.imgSrc}" alt="${info.imgAlt}" class="w-full h-[200px] sm:h-[240px] rounded-t-lg object-cover">
-            <p class="font-bold text-black text-base sm:text-lg px-6 pt-5">${info.title}</p>
-            <p class="text-sm sm:text-base px-6 font-bold">${info.dateTime}</p>
-            <p class="text-sm sm:text-base px-6 mb-6">${info.description}</p>
-            <div class="flex justify-start items-center px-6 pb-4">
-                <a href="index.html" class="text-sm sm:text-base text-[#432361] font-bold">Back to Events</a>
-                <img src="${info.arrowSrc}" alt="${info.arrowAlt}" class="w-4 h-4 ml-2 rotate-180">
-            </div>
-        `;
+        // Populate cover image
+        const coverImg = document.querySelector('#eventDetail img');
+        if (coverImg) {
+            coverImg.src = info.imgSrc;
+            coverImg.alt = info.imgAlt;
+        }
+
+        // Populate event title
+        const eventTitle = document.querySelector('p.font-bold.text-\\[24px\\]');
+        if (eventTitle) {
+            eventTitle.textContent = info.title;
+        }
+
+        // Populate date/time (using the provided dateTime as time)
+        const timeContainers = document.querySelectorAll('div.flex.items-center.space-x-2');
+        if (timeContainers[1]) {
+            const timeP = timeContainers[1].querySelector('p');
+            if (timeP) {
+                timeP.textContent = info.dateTime;
+            }
+        }
+
+        // Populate events description
+        const descP = document.querySelector('p.pt-5.text-sm.sm\\:text-base.text-left');
+        if (descP) {
+            descP.innerHTML = info.description.replace(/\n/g, '<br><br>');
+        }
+
+        // Populate single ticket price
+        const pricingContainer = document.querySelector('div.flex.flex-col.sm\\:flex-row.space-y-4.sm\\:space-y-0.sm\\:space-x-10.pt-5.pb-10');
+        if (pricingContainer) {
+            const singlePriceP = pricingContainer.querySelector('div:first-child > p.text-sm.sm\\:text-base.text-\\[\\#9B51E0\\].font-bold');
+            if (singlePriceP) {
+                singlePriceP.textContent = `$${product.price}`;
+            }
+        }
     } else {
         console.error('Failed to load product');
-        document.getElementById("eventDetail").innerHTML = '<p class="text-red-500 px-6 py-4">Product not found.</p>';
+        const container = document.getElementById("eventDetail");
+        if (container) {
+            container.innerHTML = '<p class="text-red-500 px-6 py-4">Product not found.</p>';
+        }
     }
 });
