@@ -10,57 +10,88 @@
 </head>
 
 <body class="font-Gilroy-SemiBold">
-    <main class="bg-[url('./assets/images/Rectangle2.png')] bg-cover bg-top bg-center bg-no-repeat min-h-[400px] sm:min-h-[500px] md:min-h-[640px] pt-8 md:pt-15">
+    <main class="bg-[url('./assets/images/Rectangle2.png')] bg-cover bg-center bg-no-repeat min-h-screen pt-6">
+
         <!-- Header Section -->
-        <header class="flex justify-center items-center p-4 bg-white/50 rounded-xl w-full max-w-7xl mx-auto h-[60px] sm:h-[80px]">
-            <div class="flex flex-col sm:flex-row items-center justify-between w-full px-4 sm:space-x-8 md:space-x-16">
-                <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#432361]">rendezvous</div>
-                <nav class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">Discover</a>
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">About us</a>
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">FAQs</a>
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">Contact us</a>
-                </nav>
-                <div class="space-x-4 mt-4 sm:mt-0">
-                    <button class="p-2 w-[100px] sm:w-[120px] h-[40px] sm:h-[44px] text-[#432361] font-bold">Log in</button>
-                    <button class="bg-[#783EAD] p-2 rounded-lg w-[100px] sm:w-[120px] h-[40px] sm:h-[44px] text-white">Sign up</button>
+        <header class="bg-white/60 backdrop-blur-md rounded-xl max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+                <!-- Logo -->
+                <div class="text-2xl sm:text-3xl font-bold text-[#432361] text-center sm:text-left">
+                    rendezvous
                 </div>
+
+                <!-- Nav -->
+                <nav class="flex flex-wrap justify-center gap-4">
+                    <a href="#" class="font-bold text-sm text-[#432361]">Discover</a>
+                    <a href="#" class="font-bold text-sm text-[#432361]">About us</a>
+                    <a href="#" class="font-bold text-sm text-[#432361]">FAQs</a>
+                    <a href="#" class="font-bold text-sm text-[#432361]">Contact us</a>
+                </nav>
+
+                <!-- Auth -->
+                <div class="flex justify-center gap-3">
+                    <button class="h-10 px-4 font-bold text-[#432361]">Log in</button>
+                    <button class="h-10 px-4 rounded-lg bg-[#783EAD] text-white">
+                        Sign up
+                    </button>
+                </div>
+
             </div>
         </header>
-        <div class="flex justify-center space-x-30 [1300px] mt-70 rounded-b-lg relative z-10 md:items-start md:space-x-8 max-w-7xl mx-auto md:mt-70">
-            <div class="text-white font-bold text-2xl sm:text-3xl md:text-4xl text-center md:text-left mb-6 md:mb-0">Ready to Rock? Discover the <br> Hottest Events Here - Your
-                <br> Calendar's New Best Friend!
+
+        <div class="max-w-7xl mx-auto px-4 mt-16 flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
+            <div class="text-white font-bold text-2xl sm:text-3xl md:text-4xl text-center md:text-left leading-tight">
+                Ready to Rock? Discover the <br />
+                Hottest Events Here — Your <br />
+                Calendar's New Best Friend!
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 bg-white rounded-[20px] p-3 w-full sm:w-[600px] md:w-[660px] h-auto sm:h-[80px] md:h-[100px]">
-                <img src="./assets/images/Search.png" alt="Search Icon" class="w-4 h-4 sm:w-5 sm:h-5">
-                <span class="text-[#4F4F4F] text-sm sm:text-base">Search for an event</span>
-                <div class="w-[2px] h-6 sm:h-10 bg-[#E0E0E0]"></div>
-                <div class="text-[#4F4F4F] text-sm sm:text-base">Categories</div>
-                <!-- Image button -->
-                <div class="relative inline-block text-left">
-                    <button id="dropdownButton" class="focus:outline-none">
-                        <img src="./assets/images/Chevron--down.png" alt="Dropdown Icon" class="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer">
-                    </button>
-                    <!-- Dropdown Menu -->
-                    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 sm:w-48 bg-white border border-gray-200 rounded-md shadow-lg z-20">
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">All</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Comedy</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Religious</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Tech</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Health</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Fitness</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Sport</a>
-                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-sm">Education</a>
-                    </div>
-                </div>
-                <button class="bg-[#783EAD] p-2 rounded-lg w-[100px] sm:w-[120px] h-[40px] sm:h-[44px] text-white flex items-center justify-center text-sm sm:text-base">Search</button>
-            </div>
+
+            <div class="bg-white rounded-2xl p-4 w-full md:max-w-[660px] flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-4">
+  
+  <!-- Search -->
+  <div class="flex items-center gap-2 flex-1">
+    <img src="./assets/images/Search.png" class="w-5 h-5" />
+    <span class="text-sm text-[#4F4F4F]">Search for an event</span>
+  </div>
+
+  <!-- Divider -->
+  <div class="hidden sm:block w-px h-8 bg-[#E0E0E0]"></div>
+
+  <!-- Category -->
+  <div class="flex items-center gap-2">
+    <span class="text-sm text-[#4F4F4F]">Categories</span>
+
+    <div class="relative">
+      <button id="dropdownButton">
+        <img src="./assets/images/Chevron--down.png" class="w-4 h-4" />
+      </button>
+
+      <div
+        id="dropdownMenu"
+        class="hidden absolute left-0 mt-2 w-44 bg-white border rounded-md shadow-lg z-20"
+      >
+        <a class="block px-4 py-2 text-sm hover:bg-gray-100">All</a>
+        <a class="block px-4 py-2 text-sm hover:bg-gray-100">Comedy</a>
+        <a class="block px-4 py-2 text-sm hover:bg-gray-100">Tech</a>
+        <a class="block px-4 py-2 text-sm hover:bg-gray-100">Health</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <button class="bg-[#783EAD] text-white rounded-lg h-10 px-6 text-sm font-semibold w-full sm:w-auto">
+    Search
+  </button>
+</div>
+
         </div>
     </main>
     <!-- Trending Events Section -->
     <section class="min-h-[600px] mx-auto mt-10 bg-white p-4 sm:p-6">
         <div class="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 w-full max-w-7xl mx-auto mb-6">
-            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#000000] text-center sm:text-left">Trending Events</div>
+            <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#000000] text-center sm:text-left">Trending
+                Events</div>
             <div class="flex space-x-2 mt-4 sm:mt-0">
                 <a href="2index.html" class="text-sm sm:text-base font-bold text-[#432361]">View all trending events</a>
                 <img src="./assets/images/Arrow--up-right.png" alt="Arrow Up" class="w-4 h-4 sm:w-5 sm:h-5">
@@ -101,14 +132,17 @@
                     <img src="./assets/images/Arrow--up-right.png" alt="Arrow Up" class="w-4 h-4 ml-2">
                 </div>
             </div> -->
-        </div> 
+        </div>
         <!-- Events Section -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 sm:pt-20 gap-6 max-w-7xl mx-auto px-4">
             <div class="flex flex-col space-y-6">
-                <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-center sm:text-left">Discover a World of Events <br>Tailored Just for You.</p>
-                <button class="bg-[#783EAD] text-white p-2 rounded-lg h-[40px] sm:h-[44px] w-[140px] sm:w-[154px] mx-auto sm:mx-0">View all events</button>
+                <p class="text-2xl sm:text-3xl md:text-4xl font-bold text-center sm:text-left">Discover a World of
+                    Events <br>Tailored Just for You.</p>
+                <button
+                    class="bg-[#783EAD] text-white p-2 rounded-lg h-[40px] sm:h-[44px] w-[140px] sm:w-[154px] mx-auto sm:mx-0">View
+                    all events</button>
             </div>
-           <!-- First card -->
+            <!-- First card -->
             <div class="flex flex-col space-y-6">
                 <div class="relative">
                     <img src="./assets/images/Card1.png" alt="First card" class="h-[240px] w-[421px]">
@@ -138,7 +172,9 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4 sm:px-6">
                 <div>
                     <p class="text-2xl sm:text-3xl md:text-4xl text-white font-bold">rendezvous</p>
-                    <p class="text-sm sm:text-base text-white font-normal mt-4">Your Personal Event Sherpa: Curating <br>Awesome, One Click at a Time.</p>
+                    <p class="text-sm sm:text-base text-white font-normal mt-4">Your Personal Event Sherpa: Curating
+                        <br>Awesome, One Click at a Time.
+                    </p>
                 </div>
                 <div class="flex flex-col space-y-4">
                     <p class="text-xl sm:text-2xl text-white font-bold">Feature</p>
@@ -155,10 +191,12 @@
                 <div class="flex flex-col space-y-4">
                     <p class="text-xl sm:text-2xl text-white font-bold">Contact Us</p>
                     <p class="text-sm sm:text-base text-white">info@events.com</p>
-                    <p class="text-sm sm:text-base text-white">Race Course, 8/9 Marina, <br>Onikan, Lagos Lagos, 4aa Force Rd, <br>Lagos Island 102273, Lagos</p>
+                    <p class="text-sm sm:text-base text-white">Race Course, 8/9 Marina, <br>Onikan, Lagos Lagos, 4aa
+                        Force Rd, <br>Lagos Island 102273, Lagos</p>
                 </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>

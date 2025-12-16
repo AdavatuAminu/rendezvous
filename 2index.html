@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,94 +8,137 @@
     <script type="module" src="eventDetail.js"></script>
     <title>Rendezvous</title>
 </head>
+
 <body class="font-Gilroy-SemiBold">
     <main class="pt-5">
         <!-- Header Section -->
-        <header class="flex justify-center items-center p-4">
-            <div class="flex flex-col sm:flex-row items-center justify-between w-full max-w-7xl mx-auto space-y-4 sm:space-y-0 sm:space-x-8 md:space-x-16">
-                <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#432361]">rendezvous</div>
-                <nav class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                    <a href="index.html" class="font-bold text-[#432361] text-sm sm:text-base">Discover</a>
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">About us</a>
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">FAQs</a>
-                    <a href="#" class="font-bold text-[#432361] text-sm sm:text-base">Contact us</a>
+        <header class="w-full border-b">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-[#432361] text-center sm:text-left">
+                    rendezvous
+                </div>
+
+                <!-- Nav -->
+                <nav class="flex flex-wrap justify-center gap-4">
+                    <a href="index.html" class="text-sm font-bold text-[#432361]">Discover</a>
+                    <a href="#" class="text-sm font-bold text-[#432361]">About us</a>
+                    <a href="#" class="text-sm font-bold text-[#432361]">FAQs</a>
+                    <a href="#" class="text-sm font-bold text-[#432361]">Contact us</a>
                 </nav>
-                <div class="flex space-x-4">
-                    <button class="p-2 w-[100px] sm:w-[120px] h-[40px] sm:h-[44px] text-[#432361] font-bold">Log in</button>
-                    <button class="bg-[#783EAD] p-2 rounded-lg w-[100px] sm:w-[120px] h-[40px] sm:h-[44px] text-white">Sign up</button>
+
+                <!-- Auth buttons -->
+                <div class="flex justify-center gap-3">
+                    <button class="h-10 px-4 font-bold text-[#432361]">Log in</button>
+                    <button class="h-10 px-4 rounded-lg bg-[#783EAD] text-white">
+                        Sign up
+                    </button>
                 </div>
             </div>
         </header>
-         <!-- Event Detail -->
-        <div id="eventDetail" class="flex justify-center items-center p-4 sm:p-8">
-            <img src="" alt="Cover" class="w-full max-w-[1311px] rounded-lg sm:h-[400px] md:h-[480px] object-cover">
+
+        <!-- Event Detail -->
+        <div class="px-4 sm:px-8">
+            <img src="assets/images/depositphotos_79249744-stock-photo-group-of-happy-friends-at.jpg" alt="Cover"
+                class="w-full max-w-7xl mx-auto rounded-lg object-cover h-[220px] sm:h-[400px] md:h-[480px]" />
         </div>
+
         <!-- Details Section -->
-        <div class="flex flex-col md:flex-row justify-center items-start p-4 sm:p-8 space-y-6 md:space-y-0 md:space-x-8 max-w-7xl mx-auto">
-            <div class="flex space-x-80 justify-center items-center p-8">
-            <div>
-                <p class="text-black font-bold text-[24px]">I said what I said Live show</p>
-                <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
-                    <div class="flex items-center space-x-2">
-                        <img src="./assets/images/Calendar.png" alt="Calendar" class="w-5 h-5">
-                        <p class="text-sm sm:text-base">Sunday, October 3rd, 2023</p>
+        <main
+            class="flex flex-col md:flex-row justify-center items-start p-4 sm:p-8 space-y-6 md:space-y-0 md:space-x-8 max-w-7xl mx-auto">
+            <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col gap-6 lg:flex-row lg:gap-80">
+
+                <!-- Event Info -->
+                <div class="space-y-4">
+                    <p class="text-xl sm:text-2xl font-bold">
+                        I said what I said Live show
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/images/Calendar.png" class="w-5 h-5" />
+                            <p class="text-sm">Sunday, October 3rd, 2023</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/images/Time.png" class="w-5 h-5" />
+                            <p class="text-sm">6PM</p>
+                        </div>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <img src="./assets/images/Time.png" alt="Time" class="w-5 h-5">
-                        <p class="text-sm sm:text-base">6PM</p>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/images/Location.png" class="w-5 h-5 mt-1" />
+                        <p class="text-sm">
+                            Race Course, 8/9 Marina, Onikan, Lagos Island
+                        </p>
                     </div>
-                </div>
-                <div class="flex items-start space-x-2">
-                    <img src="./assets/images/Location.png" alt="Location" class="w-5 h-5">
-                    <p class="text-sm sm:text-base">Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island 102273, Lagos</p>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <img src="./assets/images/User.png" alt="User" class="w-5 h-5">
-                    <p class="text-sm sm:text-base">FK, Jollz</p>
-                </div>
-            </div>
-            <div class="pt-4 md:pt-10">
-                <p class="text-black font-bold text-base sm:text-lg md:text-xl">Contact Organizers</p>
-                <div class="flex space-x-4 pt-3">
-                    <img src="./assets/images/🦆 icon _circle email_.png" alt="Email" class="w-6 h-6">
-                    <img src="./assets/images/Vector (1).png" alt="Twitter" class="w-6 h-6">
-                    <img src="./assets/images/Vector.png" alt="Instagram" class="w-6 h-6">
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- Events and Direction Section -->
-    <section class="min-h-[600px] mx-auto mt-10 bg-white p-4 sm:p-6">
-        <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-10 max-w-7xl mx-auto p-4 sm:p-5">
-            <div class="flex-1">
-                <p class="text-base sm:text-lg font-bold">Events Description</p>
-                <p class="pt-5 text-sm sm:text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="text-base sm:text-lg font-bold pt-5">Tickets Pricing</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-10 pt-5 pb-10">
-                    <div>
-                        <p class="text-lg sm:text-xl font-bold pb-2">Single</p>
-                        <p class="text-sm sm:text-base text-[#9B51E0] font-bold">NGN5,000</p>
-                    </div>
-                    <div>
-                        <p class="text-lg sm:text-xl font-bold pb-2">Pair</p>
-                        <p class="text-sm sm:text-base text-[#9B51E0] font-bold">NGN9,000</p>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/images/User.png" class="w-5 h-5" />
+                        <p class="text-sm">FK, Jollz</p>
                     </div>
                 </div>
-                <button class="bg-[#9B51E0] rounded-lg text-white font-bold text-sm sm:text-base h-[40px] sm:h-[44px] w-[140px] sm:w-[154px]">Buy now</button>
+
+                <!-- Organizer -->
+                <div class="space-y-3">
+                    <p class="font-bold">Contact Organizers</p>
+                    <div class="flex gap-4">
+                        <img src="./assets/images/🦆 icon _circle email_.png" class="w-6 h-6" />
+                        <img src="./assets/images/Vector (1).png" class="w-6 h-6" />
+                        <img src="./assets/images/Vector.png" class="w-6 h-6" />
+                    </div>
+                </div>
+
             </div>
-            <div class="flex-none">
-                <p class="text-base sm:text-lg font-bold">Directions</p>
-                <img src="./assets/images/Rectangle 5.png" alt="Map" class="w-full max-w-[400px] h-auto sm:h-[452px] pt-5 object-cover">
+
+        </main>
+        <!-- Events and Direction Section -->
+        <section class="bg-white mt-10 px-4">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 py-6">
+
+                <!-- Description -->
+                <div class="flex-1">
+                    <p class="font-bold text-lg">Events Description</p>
+                    <p class="text-sm sm:text-base pt-4 leading-relaxed">
+                        Lorem ipsum dolor sit amet...
+                    </p>
+
+                    <p class="font-bold text-lg pt-6">Tickets Pricing</p>
+
+                    <div class="flex gap-10 pt-4">
+                        <div>
+                            <p class="font-bold">Single</p>
+                            <p class="text-[#9B51E0] font-bold">NGN5,000</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Pair</p>
+                            <p class="text-[#9B51E0] font-bold">NGN9,000</p>
+                        </div>
+                    </div>
+
+                    <button class="mt-6 bg-[#9B51E0] h-11 px-6 rounded-lg text-white font-bold">
+                        Buy now
+                    </button>
+                </div>
+
+                <!-- Map -->
+                <div class="w-full lg:w-[400px]">
+                    <p class="font-bold text-lg">Directions</p>
+                    <img src="./assets/images/Rectangle 5.png"
+                        class="w-full h-[250px] sm:h-[350px] object-cover rounded-lg mt-4" />
+                </div>
+
             </div>
-        </div>
+        </section>
+
         <!-- Footer -->
         <div class="mt-10 sm:mt-20 h-auto bg-[#432361] py-10">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4 sm:px-6">
                 <div>
                     <p class="text-2xl sm:text-3xl md:text-4xl text-white font-bold">rendezvous</p>
-                    <p class="text-sm sm:text-base text-white font-normal mt-4">Your Personal Event Sherpa: Curating <br>Awesome, One Click at a Time.</p>
+                    <p class="text-sm sm:text-base text-white font-normal mt-4">Your Personal Event Sherpa: Curating
+                        <br>Awesome, One Click at a Time.
+                    </p>
                 </div>
                 <div class="flex flex-col space-y-4">
                     <p class="text-xl sm:text-2xl text-white font-bold">Feature</p>
@@ -111,10 +155,11 @@
                 <div class="flex flex-col space-y-4">
                     <p class="text-xl sm:text-2xl text-white font-bold">Contact Us</p>
                     <p class="text-sm sm:text-base text-white">info@events.com</p>
-                    <p class="text-sm sm:text-base text-white">Race Course, 8/9 Marina, <br>Onikan, Lagos Lagos, 4aa Force Rd, <br>Lagos Island 102273, Lagos</p>
+                    <p class="text-sm sm:text-base text-white">Race Course, 8/9 Marina, <br>Onikan, Lagos Lagos, 4aa
+                        Force Rd, <br>Lagos Island 102273, Lagos</p>
                 </div>
             </div>
         </div>
-    </section>
 </body>
+
 </html>

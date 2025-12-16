@@ -65,7 +65,7 @@ const createCard = (data) => {
     footer.appendChild(arrow);
     card.appendChild(footer);
 
-    document.querySelector('#cardContainer').appendChild(card);
+    document.querySelector('#cardContainer').appendChild(card);    
 };
 
 // Product class to structure API data
